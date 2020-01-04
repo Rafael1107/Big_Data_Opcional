@@ -39,3 +39,18 @@ Residuals                        120  55855     465
 ---
 Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
 En este analisis solo son significantes la compulsividad, el estres y el tiempo de uso del celular, por otro lado la ansiedad esta ligeramente fuera del rango sin embargo posee una significancia aceptable.
+
+Pregunta 6:Generacion de Graficos
+El histograma es de Nomofobiamuestra que la mayoria de los datos se encuentran al rededor de 20-30 y 40-50, lo cual no sigue una distribucion de campana. tiene una distribucion bastante equitativa a lo largo del valor, es decir la media no es un buen inidicador representativo de esta variable.
+El Boxplot se realizo de la Variable Ansiedad, el cual se comporta bastante normal, una media de 50, percentil 75 de 75 y percentil 25 de 25, tambien los limites superior e inferior son el 100 y el 0 respectivamente.
+El Barchart o grafico de barras se realizo con la variable Genero donde se evidencia que las cantidades de hombres y mujeres tomados en esta muestra son casi los mismos, hombres supera ligeramente a las mujeres.
+
+Pregunta 7: Identificar Outliers.
+
+Para esto hay que visualizar todos los Boxplot de todas las variables como se hizo en las preguntas anteriores. Realizando dichos graficos se pueden identificar que la unica variable con outliers es la variable "Habilidades Blandas", que se visualizan con un asterisco, segun los datos entregados, todas las variables deben ser valores entre el 1 y el 100.
+
+Pregunta 8: Solucion a los Outliers
+En este caso especifico, los outliers deben ser eliminados ya que al principio se especifico que los valores deben estar entre 1 y 100, la problematica cabe dentro de la idea que 200 y 350 son valores altos sin embargo no esta claro cual fue la metrica utilizada por parte de los encuestados con el objetivo de expresar intensidad, si esta metrica fuera en base a 1000, entonces dicho valor corresponderia a un numero como 30, o el caso contrario donde se buscaba evidenciar un valor mas alto al 100 intencionalmente. Por esta inexactitud es preferible eliminar dichas observaciones de la base de datos.
+Curiosamente existen datos negativos dentro de las variables pero no son visualizadas a traves de los Boxplot, esto posiblemente porque no se encuentran tan alejados de la media como los datos mencionados en el parrafo anterior. Personalmente opino que deben ser eliminados de igual manera puesto que afectan los resultados y no cumplen con la condicion que se explicito anteriormente(Que los valores van desde el 1 hasta el 100).
+
+

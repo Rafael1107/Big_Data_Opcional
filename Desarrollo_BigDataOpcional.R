@@ -42,6 +42,27 @@ qqnorm(Data$Edad)
 RegresionCompleta<-lm(Data$Nomofobia~Data$Ansiedad+Data$Compulsividad+Data$Estrés+Data$`Habilidades blandas`+Data$`Resolución de conflictos`+Data$`Tiempo de uso del celular`+Data$Género+Data$Edad)
 RegresionCompleta
 
-########### Pregunta 4 ######################################## 
+########### Pregunta 5 ######################################## 
 ANOVA1<-aov(Data$Nomofobia~Data$Ansiedad+Data$Compulsividad+Data$Estrés+Data$`Habilidades blandas`+Data$`Resolución de conflictos`+Data$`Tiempo de uso del celular`+Data$Género+Data$Edad)
 summary(ANOVA1)
+
+########### Pregunta 6 ######################################## 
+hist(Data$Nomofobia)
+boxplot(Data$Ansiedad)
+barchart(Data$Género)
+
+########### Pregunta 7 ######################################## 
+par(mfcol=c(2,4))
+boxplot(Data$Nomofobia,main= "Nomofobia",col= "red")
+boxplot(Data$Ansiedad,main= "Ansiedad",col= "blue")
+boxplot(Data$Estrés,main= "Estres",col= "yellow")
+boxplot(Data$Compulsividad,main= "Compulsividad",col= "green")
+boxplot(Data$`Habilidades blandas`,main= "Habilidades Blandas",col= "purple",pch= 8)
+boxplot(Data$`Resolución de conflictos`,main= "Resolucion de Conflictos",col= "orange")
+boxplot(Data$Edad,main= "Edad",col= "gray")
+levels(Data$Género)
+boxplot(Data$Nomofobia~Data$Género,main= "Genero",col="pink")
+
+########### Pregunta 8 ######################################## 
+DataFinal<-Data[c(-5,-11,-106),]
+DataFinal_Sin_Negativosa<-DataFinal[c(-46,-41,-126,-31),]
