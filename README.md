@@ -13,7 +13,7 @@ Pregunta4:
 Coefficients:
                      (Intercept)                     Data$Ansiedad  
                         -0.68391                           0.01860  
-              Data$Compulsividad                       Data$Estrés  
+              Data$Compulsividad                        Data$Estrés  
                          0.24266                           0.17216  
       Data$`Habilidades blandas`   Data$`Resolución de conflictos`  
                          0.03117                          -0.03944  
@@ -25,8 +25,7 @@ Data$`Tiempo de uso del celular`                  Data$GéneroMujer
   Variables como Compulsividad, Ansiedad, Estres, y tiempo en el celular son evidentemente positivas, es decir un aumento en ellas provoca un aumento en la Nomofobia. Tambien es importante visualizar la intensidad de dichos coheficientes, siendo el mas grande el "Tiempo en el celular" seguido por la Compulsividad, la logica indicaria que la ansiedad deberia jugar un factor importante en la Nomofobia.
   
 Pregunta 5: Analisis Anova
-
-                                 Df Sum Sq Mean Sq F value   Pr(>F)    
+Df Sum Sq Mean Sq F value   Pr(>F)    
 Data$Ansiedad                      1   1813    1813   3.894 0.050756 .  
 Data$Compulsividad                 1   9368    9368  20.127 1.67e-05 ***
 Data$Estrés                        1   6699    6699  14.392 0.000234 ***
